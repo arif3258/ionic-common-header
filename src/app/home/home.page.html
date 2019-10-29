@@ -1,14 +1,13 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-common-header [pageTitle]="'Home'"></app-common-header>
 
 <ion-content>
   <div class="ion-padding">
     The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be
+      your guide.</p>
+    <hr>
+    <p>Change directory to -</p>
+    <ion-button (click)="onIosClick()">IOS</ion-button>
+    <ion-button (click)="onAndroidClick()">Android</ion-button>
   </div>
 </ion-content>

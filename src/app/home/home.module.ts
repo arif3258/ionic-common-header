@@ -5,10 +5,12 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
+import { CommonComponentModule } from '../common-component.module';
 
 @NgModule({
   imports: [
     CommonModule,
+    CommonComponentModule,
     FormsModule,
     IonicModule,
     RouterModule.forChild([
@@ -20,4 +22,4 @@ import { HomePage } from './home.page';
   ],
   declarations: [HomePage]
 })
-export class HomePageModule {}
+export class HomePageModule { }

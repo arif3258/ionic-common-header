@@ -16,33 +16,18 @@ export class PixelPage implements OnInit {
 
   ngOnInit() { }
 
-  ionViewWillEnter() {
-    console.log('ionViewWillEnter');
-  }
-
   ionViewDidEnter() {
     console.log('ionViewDidEnter');
     this.setUIBackButtonAction();
-  }
-
-  ionViewDidLeave() {
-    console.log('ionViewDidLeave');
-  }
-  ionViewCanLeave() {
-    console.log('ionViewCanLeave');
-  }
-
-  ionViewWillLeave() {
-    console.log('ionViewWillLeave');
   }
 
   goBack() {
     this.router.navigate(['android']).then(async () => {
       const toast = await this.toastCtrl.create({
         header: 'Hey!',
-        message: 'You have left Pixel page',
+        message: 'You have left the page',
         duration: 2000,
-        position: 'top',
+        position: 'bottom',
         buttons: [
           {
             text: 'Done',

@@ -20,30 +20,14 @@ export class IphonePage implements OnInit {
 
   }
 
-  ionViewWillEnter() {
-    console.log('ionViewWillEnter');
-  }
-
   ionViewDidEnter() {
     console.log('ionViewDidEnter');
     this.setUIBackButtonAction();
   }
 
-  ionViewDidLeave() {
-    console.log('ionViewDidLeave');
-
-  }
-  ionViewCanLeave() {
-    console.log('ionViewCanLeave');
-  }
-
-  ionViewWillLeave() {
-    console.log('ionViewWillLeave');
-  }
-
   async goBack() {
     const alert = await this.alertCtrl.create({
-      header: 'Leave IPhone Page?',
+      header: 'Are you sure?',
       subHeader:
         'All unsaved progress will be discarded. Are you sure you want to leave the page?',
       buttons: [
